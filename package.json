@@ -1,0 +1,36 @@
+{
+  "name": "typescript-parcel-boilerplate",
+  "version": "1.0.0",
+  "description": "Parcel boilerplate for creating vanilla TypeScript apps",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf -rf ./.cache",
+    "dev": "npm run clean && parcel public/index.html",
+    "build": "parcel build public/index.html --out-dir dist --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yomandawg/parcel-typescript-boilerplate.git"
+  },
+  "keywords": [
+    "parcel",
+    "typescript"
+  ],
+  "author": "Ray Kim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yomandawg/parcel-typescript-boilerplate/issues"
+  },
+  "homepage": "https://github.com/yomandawg/parcel-typescript-boilerplate#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.1.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.0.3"
+  }
+}
